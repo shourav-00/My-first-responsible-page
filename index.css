@@ -7,3 +7,159 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Share things */
+.display-flex{
+    display:flex;
+}
+/* navbar things */
+.nav-lnk{
+    list-style: none;
+    margin-right: 20px;
+}
+.rus a{
+    text-decoration: none;
+    
+}
+
+.lus{
+    justify-content: space-between;
+    align-items: center;
+}
+.rus{
+    font-weight: 500;
+    
+}  
+
+.header{
+    background-color: blanchedalmond;
+   
+    
+}
+.one{
+    font-weight: 400;
+    font-size: 3rem;
+}
+.lus,.banner{
+    max-width: 1440px;
+    width: 100%;
+    margin:0 auto;
+}
+.banner-C{
+    max-width: 972px;
+    margin:0 auto;
+    text-align:center;
+    /* justify-content: center; */
+       /* align-items: center; */
+}
+.btn{
+    font-size: 1rem;
+    border:none;
+    background-color: chocolate;
+    border-radius: 5px;
+    padding:5px;
+    text-align: center;
+    /* align-items: center;
+    justify-content: center; */
+    margin-bottom: 15px;
+    transition: all 0.3s ease; 
+}
+.btn:hover {
+    background-color:khaki;
+    /* font-size: 1.3rem; */
+    cursor:pointer;
+    transform: scale(1.05); 
+}
+/* .imges-l{
+    margin-top: 2px;
+    padding-top: 2px;
+} */
+.banner-T{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.imges-l{
+    width: 100%;
+}
+
+
+/* main part */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;   /*way to width fix and it does the perfect things  */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.main-top{
+
+    align-items:center;
+     /* justify-content: center; */
+}
+
+.main-img{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+}
+
+.main-feature{
+    margin-left: 130px;
+    max-width:530px;
+
+}
+.bluh{
+    font-size: 60px;
+    /* font-weight: 400; */
+    color: chocolate;
+}
+#spuh{
+    font-weight: 700;
+    color: black;
+}
+
+/* Small devices */
+@media screen and (max-width:576px) {
+    .lus,.rus,.main-top{
+        flex-direction: column;                        
+    }
+    .main-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .main-feature{
+       margin-left: 40px;
+    }
+}
+
+.sec-2{
+    font-size: 30px;
+    
+}
+
+/* Medium devices */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .main-top{
+        flex-direction: column;   
+    }
+    .main-feature{
+       margin-left: 70px;
+    }
+
+}
+/* main media query
+@media screen and (max-width:576px){
+    .main-feature{
+        flex-direction: column;
+    }
+} */
+
